@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dashboard"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/tool"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_above="@+id/lnBottom"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight=".7"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvBitcoin"
+                        android:maxLength="10"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:text="0.0"
+                        android:textSize="30dp"
+                        android:textColor="@color/white"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:maxLength="10"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Ace"
+                        android:textSize="30dp"
+                        android:textColor="@color/white"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvINR"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/button_background"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight=".3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lnCopy"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".1"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/copy"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvCopy"
+                    android:layout_width="wrap_content"
+                    android:text="@string/copy_bitcoin"
+                    android:textColor="@color/black"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnShare"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight=".1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/share"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/share_bitcoin"
+                    android:textColor="@color/black"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/image_wight"
+                android:layout_marginTop="@dimen/margin_x"
+                android:layout_height="@dimen/image_wight"
+                android:id="@+id/bitcoin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_xv"
+                android:layout_marginRight="@dimen/margin_x"
+                android:layout_marginLeft="@dimen/margin_x"
+                android:text="@string/your_bitcoin"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+   <androidx.cardview.widget.CardView
+        android:orientation="vertical"
+        android:id="@+id/card"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/image_wight"
+        android:layout_marginLeft="@dimen/margin_x"
+        android:layout_marginRight="@dimen/margin_x"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_x"
+            android:layout_marginBottom="@dimen/margin_x"
+            android:padding="@dimen/margin_v"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txBitcoinAddress"
+                            android:layout_width="wrap_content"
+                            android:textAppearance="?android:textAppearanceSmall"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/card"
+        android:id="@+id/head"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/margin_v"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="1Ace Buying rate "
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txBitcoin"
+                android:layout_width="match_parent"
+                android:text="643,647,00 Rs"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/margin_v"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="1Ace Selling Rate "
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvSellrate"
+                android:layout_width="match_parent"
+                android:text="643,647,00 Rs"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

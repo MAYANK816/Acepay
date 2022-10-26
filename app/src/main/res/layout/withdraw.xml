@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/back_side"
+        android:padding="@dimen/margin_x"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="Amount will be credited to your below registerd back account."
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/margin_v"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:text="Bank name :"
+                android:layout_weight="1.35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvBackname"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:paddingLeft="@dimen/margin_v"
+                android:layout_weight="0.65"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:text="gfjgjfjfjf"
+                android:layout_height="wrap_content" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_v"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_weight="1.35"
+                android:layout_width="match_parent"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:text="A/C name :"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvacName"
+                android:layout_weight="0.65"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:paddingLeft="@dimen/margin_v"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:text=""
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_v"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1.35"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:text="A/C no. :"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvacNo"
+                android:layout_weight="0.65"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:paddingLeft="@dimen/margin_v"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:text=""
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_v"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_weight="1.35"
+                android:layout_width="match_parent"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:text="IFSC code :"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvIfsc"
+                android:layout_weight="0.65"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:paddingLeft="@dimen/margin_v"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:text=""
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_margin="@dimen/margin_2"
+            android:background="#cccccc"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvcancel"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:padding="@dimen/margin_5"
+                android:layout_marginLeft="@dimen/margin_x"
+                android:layout_marginRight="@dimen/margin_x"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Cancel"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvOk"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/margin_5"
+                android:layout_marginLeft="@dimen/margin_x"
+                android:layout_marginRight="@dimen/margin_x"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text= "  Ok  "
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

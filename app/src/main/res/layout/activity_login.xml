@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_after_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.acepay.AfterSplash">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/logo_weight"
+                android:layout_height="@dimen/logo_height"
+                android:background="@drawable/logo"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvGenerate"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="@string/enter_secure_pin"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_x"
+                android:layout_margin="@dimen/margin_v"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/back_side"
+                    android:layout_margin="@dimen/margin_v"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edfirst"
+                    android:layout_width="@dimen/margin_top"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text=" "
+                    android:digits="0123456789"
+                    android:visibility="visible"
+                    android:inputType="number"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:layout_height="@dimen/margin_top" />
+
+                    <ImageView
+                        android:id="@+id/imFis"
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/password"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/back_side"
+                    android:layout_margin="@dimen/margin_v"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edSecond"
+                    android:layout_width="@dimen/margin_top"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text=" "
+                    android:digits="0123456789"
+                    android:visibility="visible"
+                    android:inputType="number"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:layout_height="@dimen/margin_top" />
+
+                    <ImageView
+                        android:id="@+id/imS"
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/password"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/back_side"
+                    android:layout_margin="@dimen/margin_v"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edthird"
+                    android:layout_width="@dimen/margin_top"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text=" "
+                    android:digits="0123456789"
+                    android:visibility="visible"
+                    android:inputType="number"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:layout_height="@dimen/margin_top" />
+
+                    <ImageView
+                        android:id="@+id/imth"
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/password"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/back_side"
+                    android:layout_margin="@dimen/margin_v"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edFouth"
+                    android:layout_width="@dimen/margin_top"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text=" "
+                    android:digits="0123456789"
+                    android:visibility="visible"
+                    android:inputType="number"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:layout_height="@dimen/margin_top" />
+
+                    <ImageView
+                        android:id="@+id/imfo"
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/password"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnLayerforgot"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvattempts"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvforgot"
+                    android:layout_width="wrap_content"
+                    android:text="@string/forgot_pin"
+                    android:textStyle="bold"
+                    android:textColor="@color/button_background"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txnext"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="@string/next"
+                android:visibility="visible"
+                android:layout_marginRight="@dimen/margin_x"
+                android:padding="@dimen/margin_v"
+                android:background="@drawable/green_back_button"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txSubmit"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="@string/next"
+                android:layout_marginRight="@dimen/margin_x"
+                android:padding="@dimen/margin_v"
+                android:background="@drawable/green_back_button"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

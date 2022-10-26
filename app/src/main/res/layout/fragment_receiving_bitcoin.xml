@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/margin_x"
+    android:layout_marginRight="@dimen/margin_x"
+    android:layout_marginTop="@dimen/margin_x"
+    android:layout_marginBottom="@dimen/margin_x">
+
+   <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+        android:id="@+id/txData"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorPrimary"
+        android:visibility="gone"
+        android:text="@string/no_data_found"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_support_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <!--  <include layout="@layout/toolbar"
+        android:id="@+id/tool"/>-->
+
+    <LinearLayout
+        android:id="@+id/layout_main"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin_x"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_28"
+            android:gravity="center"
+            android:text="Need help? Our Help centre enables you to create ticket, manage your existing tickets and rate the app."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_3"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="your existing tickets or rate the app."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_25"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tv_knowledge_base"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_150"
+                android:layout_margin="@dimen/margin_15"
+                android:layout_weight="1"
+                app:cardElevation="@dimen/cardview_default_elevation">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/n_bg_background"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center"
+                        android:text="Knowledge"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_medium_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center"
+                        android:text="Base"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_medium_size" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+           <androidx.cardview.widget.CardView
+                android:id="@+id/tv_crete_tikt"
+               android:background="@drawable/n_bg_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_150"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/margin_15"
+                app:cardElevation="@dimen/cardview_default_elevation">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/n_bg_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center"
+                        android:text="Create "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_medium_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center"
+                        android:text="Ticket"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_medium_size" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:orientation="horizontal">
+
+           <androidx.cardview.widget.CardView
+                android:id="@+id/my_tick"
+               android:background="@drawable/n_bg_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_150"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/margin_15"
+                app:cardElevation="@dimen/cardview_default_elevation">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/n_bg_background"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center"
+                        android:text="My"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_medium_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center"
+                        android:text="Tickets"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_medium_size" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+           <androidx.cardview.widget.CardView
+                android:id="@+id/tv_app_rate"
+               android:background="@drawable/n_bg_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_150"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/margin_15"
+                app:cardElevation="@dimen/cardview_default_elevation">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/n_bg_background"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center"
+                        android:text="Rate the"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_medium_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center"
+                        android:text="App"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_medium_size" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

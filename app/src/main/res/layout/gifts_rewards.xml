@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/ivarrow"
+            android:layout_width="wrap_content"
+            android:background="@drawable/back_errow"
+            android:backgroundTint="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_x"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txName"
+            android:layout_width="wrap_content"
+            android:textColor="@color/gradient_1"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
+            android:text="Gifts and Rewards"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/ivGifts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/placeholder"/>
+
+
+
+</LinearLayout>

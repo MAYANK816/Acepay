@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#2d3945</color>
+    <color name="colorPrimaryDark">#2d3945</color>-->
+
+    <color name="colorPrimary">#363435</color>
+    <color name="colorPrimaryDark">#FFCC2A</color>
+    <!--<color name="colorAccent">#2d3945</color>-->
+    <color name="colorAccent">#363435</color>
+    <!--<color name="colorAccent">#2d3945</color>-->
+    <color name="button_background">#363435</color>
+   <!--<color name="button_background">#2fd49e</color>-->
+    <color name="divider">#3ec699</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="gray">#737171</color>
+    <color name="backgound">#d1cfcf</color>
+    <color name="red">#d40e0e</color>
+    <color name="red_light">#F83C3C</color>
+    <color name="blue">#1d42d9</color>
+    <color name="sky_blue">#2196F3</color>
+    <color name="brawn">#d7cfcf</color>
+    <color name="colortooltip">#b32d3945</color>
+    <color name="new_color">#b38a949f</color>
+    <color name="light_gray">#b38a949f</color>
+    <color name="transparent">#00000000</color>
+
+    <!--<color name="colorPrimary">#8e6fea</color>
+     <color name="colorPrimaryDark">#303F9F</color>
+     <color name="colorAccent">#FF4081</color>
+     <color name="black">#000000</color>-->
+
+    <color name="light_green">#28bf12</color>
+    <!--<color name="white">#ffffff</color>-->
+    <color name="text_grey_color">#5E5E5E</color>
+    <color name="text_bg">#e9f2ef</color>
+    <color name="gradient_1">#363435</color>
+    <color name="gradient_3">#D0363435</color>
+    <color name="gradient_2">#FFCC2A</color>
+
+    <!--<color name="gradient_1">#3375ff</color>
+    <color name="blue">#d078e4</color>-->
+
+</resources>

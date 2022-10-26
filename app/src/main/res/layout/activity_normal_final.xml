@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_normal_payment_way"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ <!--   <include
+        android:id="@+id/tool"
+        layout="@layout/toolbar" />-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_x"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_rupee"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:src="@drawable/paymentrupee" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:background="@color/button_background"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_home"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:src="@drawable/home" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:background="@color/button_background"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_tick"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:background="@drawable/agree"
+                    android:backgroundTint="@color/button_background" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:background="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_code"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:background="@drawable/paymentpass"
+                    android:backgroundTint="@color/black" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:background="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_sucess"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:background="@drawable/finapay"
+                    android:backgroundTint="@color/black" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:background="@color/black"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:gravity="center"
+                    android:text="Verify your Bank"
+                    android:textSize="@dimen/margin_16"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_rupees"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_v"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_16"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_v"
+                    android:background="@drawable/blue_bg_radius_5"
+                    android:gravity="start"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_v"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/margin_v"
+
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.1"
+                            android:text="Bank name:"
+                            android:textColor="@color/white"
+
+                            />
+                    <TextView
+                        android:id="@+id/bank_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:textColor="@color/white"
+                     />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_v"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.1"
+                            android:text="A/c name:"
+                            android:textColor="@color/white"
+
+                        />
+
+                        <TextView
+                            android:id="@+id/tv_ac_holder_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".9"
+                            android:textColor="@color/white"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_v"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.1"
+                            android:text="A/c number:"
+                            android:textColor="@color/white"
+ />
+
+                        <TextView
+                            android:id="@+id/tv_acc_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+
+                            android:layout_weight=".9" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_v"
+                        android:layout_marginLeft="@dimen/margin_v"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.1"
+                            android:text="IFSC Code:"
+                            android:textColor="@color/white"
+ />
+
+                        <TextView
+                            android:id="@+id/tv_ifsc_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+
+                            android:layout_weight=".9" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_xx"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:background="@drawable/blue_bg_radius_5"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_v"
+                        android:layout_marginTop="@dimen/margin_v"
+                        android:layout_weight=".9"
+                        android:text="Important"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_v"
+                        android:drawableLeft="@drawable/blue_tick"
+                        android:drawableTint="@color/white"
+                        android:gravity="center_vertical"
+                        android:text="Pay only via RTGS, NEFT, IMPS or same bank to bank option."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/margin_12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/blue_tick"
+                        android:gravity="center_vertical"
+                        android:drawableTint="@color/white"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:text="While doing any RTGS, NEFT or IMPS payments make sure that you are using your verified bank account only. "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/margin_12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/blue_tick"
+                        android:gravity="center_vertical"
+                        android:drawableTint="@color/white"
+                        android:layout_marginTop="@dimen/margin_8"
+
+                        android:text="Payments gateway option can also be used for making payments."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/margin_12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/blue_tick"
+                        android:gravity="center_vertical"
+                        android:drawableTint="@color/white"
+                        android:layout_marginTop="@dimen/margin_8"
+
+                        android:text="Only those payments that are made from your registered account with be acceptable."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/margin_12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/blue_tick"
+                        android:gravity="center_vertical"
+                        android:drawableTint="@color/white"
+                        android:layout_marginTop="@dimen/margin_8"
+
+                        android:text="If any other account is used for any transaction, your amount will be returned to your verified bank account after 15 days and you will be charged a penalty of Rs. 500"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/margin_12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/blue_tick"
+                        android:gravity="center_vertical"
+                        android:drawableTint="@color/white"
+                        android:layout_marginTop="@dimen/margin_8"
+
+                        android:text="Only full order payments in single transactions are permissible. Partial payments will not be accepted. "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/margin_12" /> <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/blue_tick"
+                        android:gravity="center_vertical"
+                        android:drawableTint="@color/white"
+                    android:layout_marginTop="@dimen/margin_8"
+
+                        android:text="We don’t allow any Cash Deposits."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/margin_12" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/margin_v"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvNext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/blue_bg_radius"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_10"
+                        android:text="Next"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_medium_size" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

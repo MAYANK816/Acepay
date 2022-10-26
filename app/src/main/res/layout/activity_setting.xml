@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.acepay.Setting">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_50"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvSecurity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_18"
+                android:layout_marginTop="@dimen/margin_18"
+                android:layout_marginEnd="@dimen/margin_18"
+                android:layout_marginBottom="@dimen/margin_18"
+                android:gravity="start|center"
+                android:text="Security"
+                android:textSize="@dimen/text_medium_size" />
+
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0.5dp"-->
+<!--                android:layout_toRightOf="@+id/tvSecurity"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginRight="@dimen/margin_8"-->
+<!--                android:layout_marginLeft="@dimen/margin_2"-->
+<!--                android:layout_marginTop="@dimen/margin_18"-->
+
+<!--                android:background="@color/gradient_1"/>-->
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lnChangePin"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Manage your PIN"
+                android:paddingTop="@dimen/margin_x"
+                android:paddingRight="@dimen/margin_x"
+                android:paddingLeft="@dimen/margin_x"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/margin_x"
+                    android:paddingRight="@dimen/margin_x"
+                    android:paddingLeft="@dimen/margin_x"
+                    android:background="@drawable/right_back"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+            android:layout_width="match_parent"
+            android:text="Set a new Secure PIN."
+            android:padding="@dimen/margin_v"
+            android:layout_weight=".2"
+            android:layout_marginLeft="@dimen/margin_v"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+
+            <TextView
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_v"
+            android:layout_weight=".8"
+            android:layout_marginLeft="@dimen/margin_v"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Enable/Disable PIN "
+                android:paddingTop="@dimen/margin_x"
+                android:paddingRight="@dimen/margin_x"
+                android:paddingLeft="@dimen/margin_x"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/lock_pin"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/margin_x"
+                    android:paddingRight="@dimen/margin_x"
+                    android:paddingLeft="@dimen/margin_x"
+                    android:paddingBottom="@dimen/margin_v"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Use your Acepay app with or without entering Secure PIN. "
+                android:padding="@dimen/margin_v"
+                android:layout_weight=".2"
+                android:layout_marginLeft="@dimen/margin_v"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_v"
+                android:layout_weight=".8"
+                android:layout_marginLeft="@dimen/margin_v"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Outgoing Transactions "
+                android:paddingTop="@dimen/margin_x"
+                android:paddingRight="@dimen/margin_x"
+                android:paddingLeft="@dimen/margin_x"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/lnLockTransaction"
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/lock_outgoing_transaction"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:paddingTop="@dimen/margin_x"
+                    android:paddingRight="@dimen/margin_x"
+                    android:paddingLeft="@dimen/margin_x"
+                    android:paddingBottom="@dimen/margin_v"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Receive OTP while doing outgoing transactions.  "
+                android:padding="@dimen/margin_v"
+                android:layout_weight=".2"
+                android:layout_marginLeft="@dimen/margin_v"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_v"
+                android:layout_weight=".8"
+                android:layout_marginLeft="@dimen/margin_v"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnFingerPrintlayer"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/finger_print"
+                android:paddingTop="@dimen/margin_x"
+                android:paddingRight="@dimen/margin_x"
+                android:paddingLeft="@dimen/margin_x"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/lnFingerPrint"
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/finger_print"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/margin_x"
+                    android:paddingRight="@dimen/margin_x"
+                    android:paddingLeft="@dimen/margin_x"
+                    android:paddingBottom="@dimen/margin_v"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/use_fingerprint_for_metapay"
+                android:padding="@dimen/margin_v"
+                android:layout_weight=".2"
+                android:layout_marginLeft="@dimen/margin_v"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_v"
+                android:layout_weight=".8"
+                android:layout_marginLeft="@dimen/margin_v"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_18"
+                android:layout_marginTop="@dimen/margin_18"
+                android:layout_marginEnd="@dimen/margin_18"
+                android:layout_marginBottom="@dimen/margin_18"
+                android:gravity="start|center"
+                android:text="Notification Alert"
+                android:textSize="@dimen/text_medium_size" />
+
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0.5dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginLeft="@dimen/margin_2"-->
+<!--                android:layout_marginTop="@dimen/margin_18"-->
+<!--                android:layout_marginRight="@dimen/margin_8"-->
+<!--                android:layout_toRightOf="@+id/Notification"-->
+
+<!--                android:background="@color/gradient_1" />-->
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/rate_alert"
+                android:paddingTop="@dimen/margin_x"
+                android:paddingRight="@dimen/margin_x"
+                android:paddingLeft="@dimen/margin_x"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/sw_rate_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/margin_x"
+                    android:paddingRight="@dimen/margin_x"
+                    android:paddingLeft="@dimen/margin_x"
+                    android:paddingBottom="@dimen/margin_v"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:text="Amount"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="3">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="100"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"/>
+
+                <SeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight=".7"
+                    android:layout_centerVertical="true"
+                    android:max="1000" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="10,0000"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/black"
+                    android:layout_weight="1.1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Notify me if the rate changes. "
+                android:padding="@dimen/margin_v"
+                android:layout_weight=".3"
+                android:layout_marginLeft="@dimen/margin_v"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_v"
+                android:layout_weight=".7"
+                android:layout_marginLeft="@dimen/margin_v"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/sound_alert"
+                android:paddingTop="@dimen/margin_x"
+                android:paddingRight="@dimen/margin_x"
+                android:paddingLeft="@dimen/margin_x"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/sw_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/margin_x"
+                    android:paddingRight="@dimen/margin_x"
+                    android:paddingLeft="@dimen/margin_x"
+                    android:paddingBottom="@dimen/margin_v"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Use your Acepay app with or without sound alerts."
+                android:padding="@dimen/margin_v"
+                android:layout_weight=".3"
+                android:layout_marginLeft="@dimen/margin_v"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_v"
+                android:layout_weight=".7"
+                android:layout_marginLeft="@dimen/margin_v"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/vibrate_alert"
+                android:paddingTop="@dimen/margin_x"
+                android:paddingRight="@dimen/margin_x"
+                android:paddingLeft="@dimen/margin_x"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/sw_vibrate"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/margin_x"
+                    android:paddingRight="@dimen/margin_x"
+                    android:paddingLeft="@dimen/margin_x"
+                    android:paddingBottom="@dimen/margin_v"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Use your Acepay app with or without vibrate alerts."
+                android:padding="@dimen/margin_v"
+                android:layout_weight=".3"
+                android:layout_marginLeft="@dimen/margin_v"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_v"
+                android:layout_weight=".7"
+                android:layout_marginLeft="@dimen/margin_v"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

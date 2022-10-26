@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_notification_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.acepay.NotificationDetails">
+
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/tool"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin_x"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/margin_top"
+            android:layout_margin="@dimen/margin_x"
+            android:id="@+id/imtype"
+            android:backgroundTint="@color/gradient_1"
+            android:layout_height="@dimen/margin_top"/>
+
+        <TextView
+            android:id="@+id/tvdate"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:text="date"
+            android:gravity="end"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:text="Title"
+            android:layout_margin="@dimen/margin_x"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvdescription"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:text="Title"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_x"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

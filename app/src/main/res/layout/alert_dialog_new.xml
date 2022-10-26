@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_20"
+    android:layout_marginRight="@dimen/margin_20"
+    android:layout_marginTop="@dimen/margin_15"
+    android:background="@drawable/corner_radius_color_white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/app_name"
+            android:textColor="#000"
+            android:textSize="@dimen/margin_18"
+            android:padding="@dimen/margin_8"
+     />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_margin="@dimen/margin_2"
+            android:background="#cccccc"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/AmtFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:padding="@dimen/margin_v"
+                    android:text="Amount : "
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+
+
+
+
+                <TextView
+                    android:id="@+id/AmtVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:padding="@dimen/margin_v"
+                    android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+                <TextView
+                    android:id="@+id/netfee"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:padding="@dimen/margin_v"
+                    android:text="Network Fees : "
+                    android:layout_weight="1"
+
+                    android:textColor="@color/black" />
+
+
+
+
+                <TextView
+                    android:id="@+id/netVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:padding="@dimen/margin_v"
+                    android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+
+                <TextView
+                    android:id="@+id/gstfee"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:padding="@dimen/margin_v"
+                    android:text="GST : "
+                    android:layout_weight="1"
+
+                    android:textColor="@color/black" />
+
+
+
+
+                <TextView
+                    android:id="@+id/gstVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:padding="@dimen/margin_v"
+                    android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:padding="@dimen/margin_v"
+                    android:text="Total Amount : "
+                    android:layout_weight="1"
+
+                    android:textColor="@color/black" />
+
+
+
+
+                <TextView
+                    android:id="@+id/TotAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:padding="@dimen/margin_v"
+                    android:textColor="@color/black" />
+
+        </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textAppearance="?android:textAppearanceMedium"
+               />
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_margin="@dimen/margin_2"
+            android:background="#cccccc"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_4"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+
+
+
+                <TextView
+                    android:id="@+id/btncansel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/margin_4"
+                    android:text="Cancel"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="@dimen/margin_18" />
+
+                <TextView
+                    android:id="@+id/btnok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/margin_4"
+                    android:text="OK"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/margin_18" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

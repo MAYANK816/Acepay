@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_adhaar_card_verification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:id="@+id/rlImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_200"
+                android:background="@drawable/view_profile"
+                android:visibility="visible"
+                >
+
+                <ImageView
+                    android:id="@+id/ivarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:backgroundTint="@color/white"
+                    android:background="@drawable/back_errow" />
+
+                <TextView
+                    android:id="@+id/txName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="@dimen/margin_16"
+                    android:layout_toRightOf="@+id/ivarrow"
+                    android:layout_marginTop="@dimen/margin_15"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgProfile"
+                        android:layout_width="@dimen/margin_100"
+                        android:layout_height="@dimen/margin_100"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_marginEnd="@dimen/margin_10"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:background="@drawable/grey_cir_fill_primary_corner_" />
+
+                    <ImageView
+                        android:id="@+id/ivImageSelect"
+                        android:layout_width="@dimen/margin_30"
+                        android:layout_height="@dimen/margin_30"
+                        android:layout_marginLeft="-40dp"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_toRightOf="@+id/imgProfile"
+                        android:src="@drawable/edit" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rlImage"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <com.acepay.Util.GradientFontEditText
+                        android:id="@+id/edFirst"
+
+                        style="@style/App_EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_18"
+                        android:hint="@string/first_name"
+                        android:inputType="textPersonName"
+                        android:paddingBottom="@dimen/margin_10"
+                        android:paddingLeft="@dimen/margin_18"
+                        android:paddingRight="@dimen/margin_10"
+                        android:paddingTop="@dimen/margin_10"
+                        android:textSize="18dp"  />
+
+                    <com.acepay.Util.GradientFontEditText
+                        android:id="@+id/edlast"
+
+                        style="@style/App_EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_18"
+                        android:hint="@string/last_name"
+                        android:inputType="textPersonName"
+                        android:paddingBottom="@dimen/margin_10"
+                        android:paddingLeft="@dimen/margin_18"
+                        android:paddingRight="@dimen/margin_10"
+                        android:paddingTop="@dimen/margin_10"
+                        android:textSize="18dp"  />
+
+                    <com.acepay.Util.GradientFontEditText
+                        android:id="@+id/edEmail"
+                        android:inputType="textEmailAddress"
+
+                        style="@style/App_EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_18"
+                        android:hint="Email Address"
+                        android:paddingBottom="@dimen/margin_10"
+                        android:paddingLeft="@dimen/margin_18"
+                        android:paddingRight="@dimen/margin_10"
+                        android:paddingTop="@dimen/margin_10"
+                        android:textSize="18dp" />
+
+                    <com.acepay.Util.GradientFontSpinner
+                        android:id="@+id/edGender"
+                        style="@style/App_EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_18"
+                        android:hint="Gender"
+                        android:paddingBottom="@dimen/margin_10"
+                        android:paddingLeft="@dimen/margin_18"
+                        android:paddingRight="@dimen/margin_10"
+                        android:paddingTop="@dimen/margin_10"
+                        android:textSize="18dp"  />
+
+                    <com.acepay.Util.GradientFontEditText
+                        android:id="@+id/edDob"
+
+                        style="@style/App_EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_18"
+                        android:hint="Date of Birth"
+                        android:focusable="false"
+                        android:paddingBottom="@dimen/margin_10"
+                        android:paddingLeft="@dimen/margin_18"
+                        android:paddingRight="@dimen/margin_10"
+                        android:paddingTop="@dimen/margin_10"
+                        android:textSize="18dp"  />
+
+                    <com.acepay.Util.GradientFontSpinner
+                        android:id="@+id/spCountry"
+                        android:visibility="gone"
+                        style="@style/App_EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_18"
+                        android:hint="Country"
+                        android:paddingBottom="@dimen/margin_10"
+                        android:paddingLeft="@dimen/margin_18"
+                        android:paddingRight="@dimen/margin_10"
+                        android:paddingTop="@dimen/margin_10"
+                        android:textSize="18dp"  />
+
+                    <com.acepay.Util.GradientFontSpinner
+                        android:id="@+id/spState"
+                        style="@style/App_EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_18"
+                        android:hint="State"
+                        android:paddingBottom="@dimen/margin_10"
+                        android:paddingLeft="@dimen/margin_18"
+                        android:paddingRight="@dimen/margin_10"
+                        android:paddingTop="@dimen/margin_10"
+                        android:textSize="18dp"  />
+
+                    <com.acepay.Util.GradientFontSpinner
+                        android:id="@+id/spcity"
+
+                        style="@style/App_EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_18"
+                        android:hint="City"
+                        android:paddingBottom="@dimen/margin_10"
+                        android:paddingLeft="@dimen/margin_18"
+                        android:paddingRight="@dimen/margin_10"
+                        android:paddingTop="@dimen/margin_10"
+                        android:textSize="18dp"  />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_35"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/txSubmit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/blue_bg_radius"
+                            android:paddingBottom="@dimen/margin_10"
+                            android:paddingLeft="@dimen/margin_30"
+                            android:paddingRight="@dimen/margin_30"
+                            android:paddingTop="@dimen/margin_10"
+                            android:text="Submit"
+                            android:gravity="center"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

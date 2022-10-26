@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <ImageView
+            android:id="@+id/ivarrow"
+            android:layout_width="wrap_content"
+            android:background="@drawable/back_errow"
+            android:backgroundTint="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_x"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txName"
+            android:layout_width="wrap_content"
+            android:textColor="@color/gradient_1"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
+            android:text="Top 5 List"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvWinnerLabel"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:padding="12dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Winner Announce in: 00 day's 00:00:00"
+        android:background="@drawable/blue_bg_gradient"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvLast"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:padding="12dp"
+        android:gravity="center"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:text="Last Competition Winners"
+        android:layout_height="wrap_content" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_winners"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="@dimen/margin_8"
+        />
+
+    <TextView
+        android:id="@+id/tvNoWinner"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:padding="12dp"
+        android:gravity="center"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:text="No Winner Found"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tvTop"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:padding="12dp"
+        android:gravity="center"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:text="Top 5 Competitors"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvNoData"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:padding="12dp"
+        android:gravity="center"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:text="No Data Found"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

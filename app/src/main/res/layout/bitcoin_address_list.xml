@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_margin="@dimen/margin_3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/godfather"
+        app:mode="same_level"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:dragEdge="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="start"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imdelete"
+                    android:layout_width="35dp"
+                    android:background="@drawable/newdelete"
+                    android:padding="@dimen/margin_xx"
+                    android:layout_height="35dp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lnframe"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_v"
+                android:layout_marginBottom="@dimen/margin_v"
+                android:padding="@dimen/margin_v"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgProfile"
+                        android:src="@drawable/user_profile"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/lnhead"
+                        android:layout_marginLeft="@dimen/margin_v"
+                        android:layout_toRightOf="@+id/imgProfile"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txUsername"
+                            android:layout_width="wrap_content"
+                            android:text="username "
+                            android:textColor="@color/black"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tvNumber"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:text="7364774747"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_below="@+id/lnhead"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/margin_v"
+                        android:layout_toRightOf="@+id/imgProfile"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvAddress"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginRight="2dp"
+                            android:textSize="@dimen/margin_12"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+
+</androidx.cardview.widget.CardView>

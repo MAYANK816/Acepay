@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_tickets"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.acepay.Zendesk.MyTickets">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/tool"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_below="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin_v"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/lib/com.app.chasebank"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/blue_bg_gradient">
+
+
+    <ImageView
+        android:layout_width="@dimen/margin_200"
+        android:layout_height="@dimen/margin_90"
+        android:layout_marginTop="@dimen/margin_50"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:background="@drawable/newlogo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvdata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:gravity="center"
+            android:text="Enter your 10 digit Mobile Number"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_small_size" />
+
+
+        <LinearLayout
+            android:id="@+id/llMain1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/llMain2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Choose Country"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_vsmall_size"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:text="India"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_vsmall_size"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMain2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:orientation="horizontal">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccpPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.70"
+                app1:contentColor="@color/white"
+                app1:hideNameCode="true"
+                app:ccpDialog_allowSearch="false"
+                app:ccp_clickable="false"
+                app:ccp_customMasterCountries="IN"
+                app:showFullName="false" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginRight="@dimen/margin_8"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:background="@android:color/white" />
+
+            <EditText
+                android:id="@+id/edNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.3"
+                android:background="@null"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@null"
+
+                android:textSize="@dimen/margin_18" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ed_refral_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@null"
+            android:hint="Enter Refer Code"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/margin_18"
+            android:visibility="invisible" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gradient_1"
+        android:gravity="center"
+        android:padding="@dimen/margin_10"
+        android:text="SUBMIT"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:visibility="visible" />
+
+</RelativeLayout>

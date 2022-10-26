@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_support_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/tool"/>
+
+    <LinearLayout
+        android:id="@+id/layout_main"
+        android:layout_below="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin_xx"
+        android:background="@drawable/primary_background_corner"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etQuery"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/margin_x"
+            android:gravity="start"
+            android:hint="Message"
+            android:background="@null"
+            android:padding="@dimen/margin_x"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    </RelativeLayout>

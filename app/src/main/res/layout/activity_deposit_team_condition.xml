@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager_welcome_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/lay_welcome_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:id="@+id/tvSkip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:background="@color/blue"
+            android:padding="10dp"
+            android:text="Skip"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_welcome_screen"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tabBackground="@drawable/selector"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_above="@+id/lay_welcome_buttons"
+        app:tabGravity="center"
+        app:tabTextColor="@android:color/darker_gray"
+        app:tabPadding="5dp"
+        android:layout_centerInParent="true"
+        app:tabIndicatorHeight="0dp"
+        android:layout_marginRight="26dp"/>
+
+
+</RelativeLayout>

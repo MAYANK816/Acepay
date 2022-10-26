@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="@dimen/margin_x"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="@dimen/margin_x"
+            android:padding="@dimen/margin_x"
+            android:background="@drawable/edit_back"
+            android:id="@+id/tvstatedate"
+            android:paddingLeft="@dimen/margin_v"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:hint="State date"/>
+
+        <TextView
+            android:layout_margin="@dimen/margin_x"
+            android:padding="@dimen/margin_x"
+            android:background="@drawable/edit_back"
+            android:id="@+id/tvenddate"
+            android:paddingLeft="@dimen/margin_v"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:hint="End date"/>
+
+        <TextView
+            android:id="@+id/txNext"
+            android:layout_width="wrap_content"
+            android:text="@string/next"
+            android:padding="@dimen/margin_x"
+            android:layout_marginTop="@dimen/margin_x"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:background="@drawable/green_back_button"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/margin_x"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

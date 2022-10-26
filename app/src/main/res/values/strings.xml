@@ -1,0 +1,429 @@
+<resources>
+    <string name="app_name">AcePay</string>
+    <!--<string name="jkd_username">metapay</string>-->
+    <string name="jkd_username">tigerpay</string>
+    <string name="jkd_password">123456</string>
+    <string name="facebook_app_id">1969970279929904</string>
+
+    <!--https://medium.com/mojoverse-the-business-weekly/the-most-useful-way-to-add-upi-payments-to-your-app-website-ad604fcfb1cf-->
+
+    <!--Fcm account
+    email address:-valtpay@gmail.com
+    -->
+    <string name="please_enter_your_phone_no">Please Enter Your 10 digit mobile number</string>
+    <string name="mobile_no">Mobile Number</string>
+    <string name="submit">Submit</string>
+    <string name="or">Or</string>
+
+    <!--Verification Splash-->
+    <string name="verification_code">Verification Code</string>
+    <string name="back">Back</string>
+    <string name="resend">Resend</string>
+    <string name="next">Next</string>
+    <string name="remaining">Remaining</string>
+
+    <string name="please_type_the_verification_code_sent_to">Please Type the verification code sent to</string>
+
+    <!--Dashboard-->
+    <!--    <string name="your_current_btc_balance">Your current BTC Balance</string>-->
+    <string name="your_current_btc_balance">Your Current Balance</string>
+
+    <!--adhaar verification and pan card verification and bank details-->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="pan_card_number">Pan Card Number</string>
+
+    <string name="birthdate">Birthdate</string>
+    <string name="gender">Gender</string>
+    <string name="country">Country</string>
+
+    <string name="account_type">Account Type</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+
+    <string name="bank_card">Bank Card</string>
+    <string name="adhaar_card">Aadhaar Card</string>
+    <string name="Pan_card">Pan Card</string>
+    <string name="IFSC">IFSC Code</string>
+
+    <string name="bank_name">Bank Name</string>
+    <string name="branch">Branch</string>
+    <string name="account_holder_name">Account Holder Name</string>
+    <string name="account_no">Account Number</string>
+    <string name="confirm_account_no">Confirm Account Number</string>
+
+    <string name="adhaar_card_no">Aadhaar Card Number</string>
+    <string name="address">Address1</string>
+    <string name="address_new">Address2</string>
+    <string name="landmark">LandMark</string>
+
+    <string name="upload_adhaar_card_image">Upload Aadhaar Card Image</string>
+    <string name="upload_pan_card_image">Upload Pan Card Image</string>
+    <string name="upload_Passbook_or_cheque_image">Upload Passbook or cheque Image</string>
+
+    <!--Dashboard-->
+    <string name="recharge">Recharge</string>
+    <string name="movies">Movies</string>
+    <string name="cab">Cab</string>
+    <string name="Flight">Flight</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="deposit">Deposit</string>
+    <string name="description">Description</string>
+    <string name="bid">Bid</string>
+    <string name="ask">Ask</string>
+    <string name="fd">F.D</string>
+
+    <string name="receive">Receive</string>
+    <string name="send">Send</string>
+    <string name="transaction">Transactions</string>
+    <string name="wallet_balance">Wallet Balance</string>
+    <string name="transfer">Transfer</string>
+    <string name="buy">Buy</string>`
+    <string name="sell">Sell</string>
+
+    <!--Menu-->
+    <string name="add_address">Add AceCoin Address</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="verification">Verification</string>
+    <string name="bitcoin_address">AceCoin Address</string>
+    <string name="bitcoin_address_book">AceCoin Address Book</string>
+    <string name="statement">Statements</string>
+    <string name="rate_chart">Rate Chart</string>
+    <string name="free_bitcoin">Free AceCoin</string>
+    <string name="setting">Settings</string>
+    <string name="sink_refer_code">Refer code</string>
+    <string name="sink_list">Sync Contact List</string>
+    <string name="quick_help">Quick Help</string>
+    <string name="support">Support</string>
+    <string name="about_us">About Us</string>
+    <string name="notifications">Notifications</string>
+
+    <!--AceCoin Address-->
+    <string name="copy_bitcoin">Copy Address</string>
+    <string name="share_bitcoin">Share Address</string>
+    <!--    <string name="your_bitcoin">Your Bitcoin Address is mentioned above. You can copy, share or scan it.</string>-->
+    <string name="your_bitcoin">Your AceCoin Address is mentioned above. You can copy, share or scan it.</string>
+
+    <!--Setting-->
+    <string name="geb">Security</string>
+    <string name="notification">Notification</string>
+    <string name="change_pin">Change Pin</string>
+    <string name="rate_alert">Rate Alert</string>
+    <string name="pin_lock">PIN lock</string>
+    <string name="lock_outgoing_transaction">Lock outgoing transaction</string>
+    <string name="sound_alert">Sound Alert</string>
+    <string name="vibrate_alert">Vibrate Alert</string>
+    <string name="notification_alert">Notification Alert</string>
+    <string name="security">Security</string>
+    <string name="lock_your_zebpay">Lock your MetaPay app, to unlock use your PIN.</string>
+    <string name="you_can_enable_anytime">You can enable outgoing transaction anytime by doing OTP SMS verification.</string>
+    <string name="enable_rate_alert">Enable rate alert if rate change more than.</string>
+    <string name="play_sound_when">Play sound when there is a notification.</string>
+    <string name="vibrate_phone_when_there_is_a_notification">Vibrate phone when there is a notification.</string>
+    <string name="finger_print">Finger Print</string>
+    <string name="use_fingerprint_for_metapay">Use fingerprint for AceCoin PIN.</string>
+
+    <!--Genrate Secure Pin-->
+    <string name="generate_secure_pin">Generate Secure Pin</string>
+    <string name="enter_old_secure_pin">Enter Secure Pin</string>
+    <string name="enter_secure_pin">Enter Secure pin</string>
+    <string name="reenter_secure_pin">Please Re-Enter Secure PFin</string>
+    <string name="old_secure_pin">Enter Old Secure Pin</string>
+    <string name="new_secure_pin">Enter New Secure Pin</string>
+    <string name="confirm_secure_pin">Confirm New Secure Pin</string>
+
+    <!--AboutUs-->
+    <string name="aboutus">Disclaimer: The information contained in this communication is
+        intended solely for the use of the individual or entity to whom it is addressed and others authorized to receive it.
+        It may contain confidential or legally privileged information. If you are not the intended recipient you are
+        hereby notified that any disclosure, copying, distribution or taking any action in reliance on the contents of
+        this information is strictly prohibited and may be unlawful. If you have</string>
+
+    <!--Biding-->
+    <string name="place_bid">Place Bid</string>
+    <string name="place_Ask">Place Ask</string>
+    <string name="rate">rate</string>
+    <string name="amount">amount</string>
+    <string name="quantity">quantity</string>
+    <string name="confirm_ask">Confirm Asking</string>
+    <string name="confirm_bidding">Confirm Bidding</string>
+
+    <!--deposit-->
+    <string name="reference_id">Reference Number</string>
+    <string name="card_holder_number">Card Holder Number</string>
+    <string name="cvv">CVV</string>
+    <string name="expiry_month">Expiry Month</string>
+    <string name="expiry_year">Expiry Year</string>
+
+    <!--mobile recharge-->
+    <string name="username">Usename</string>
+    <string name="prepaid">Prepaid</string>
+    <string name="postpaid">Postpaid</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="current_operator">Current Operator</string>
+    <string name="register_phone_no">Receiver Phone Number</string>
+
+    <!--editProfile-->
+    <string name="dob">DOB</string>
+    <string name="email">Email</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="price">Price : </string>
+    <string name="date">Date </string>
+
+    <!--Validation-->
+    <string name="please_enter_phone_number">Please enter phone number.</string>
+    <string name="please_enter_correct_number">Please enter correct number.</string>
+    <string name="otp_not_match">Otp is Incorrect, please try again.</string>
+    <string name="please_enter_four_digit_secure_pin">Please enter your 4-digit Secure PIN.</string>
+    <string name="secure_pin_not_match">Secure pin does not match.</string>
+    <string name="incorrect_secure_pin">Incorrect secure pin.</string>
+    <string name="please_enter_confirm_password">Please enter confirm password.</string>
+    <string name="please_enter_confirm_secure_pin">Please enter confirm secure pin.</string>
+    <string name="please_enter_secure_pin">Please enter secure pin.</string>
+    <string name="please_enter_first_name">Please enter first name.</string>
+    <string name="please_enter_last_name">Please enter last name.</string>
+    <string name="please_enter_email">Please enter email.</string>
+    <string name="please_enter_valid_email">Please enter valid email.</string>
+    <string name="please_enter_dob">Please enter DOB.</string>
+    <string name="please_enter_city">Please enter city.</string>
+    <string name="please_select_gender">Please enter gender.</string>
+    <string name="please_select_Country">Please select country.</string>
+    <string name="please_select_state">Please select state.</string>
+    <string name="please_select_city">Please select city.</string>
+    <string name="please_select_valid_date">Your age must be greater than 18.</string>
+    <string name="please_enter_four_digit_old_secure_pin">Please enter four digit old secure pin.</string>
+    <string name="please_enter_correct_old_secure_pin">Please enter correct old secure pin.</string>
+    <string name="please_enter_four_digits_new_secure_pin">Please enter four digits new secure pin.</string>
+    <string name="please_enter_four_digits_confirm_secure_pin">Please enter four digits confirm secure pin.</string>
+    <string name="secure_pin_do_not_match">Secure pin do not match.</string>
+    <string name="please_enter_pan_card_no">Please enter pan card number.</string>
+    <string name="please_enter_valid_pan_card_no">Please enter valid pan card number.</string>
+    <string name="please_select_dob">Please select DOB.</string>
+    <string name="please_select_pan_card_image">Please select PAN card image.</string>
+    <string name="please_select_chequebook_image">Please select cheque book or passbook image.</string>
+    <string name="please_enter_ifsc">Please enter IFSC code.</string>
+    <string name="please_enter_valid_ifsc">Please enter valid IFSC.</string>
+    <string name="please_enter_username">Please enter username.</string>
+    <string name="please_enter_bank_name">Please enter bank name.</string>
+    <string name="please_enter_branch_name">Please enter branch name.</string>
+    <string name="please_select_account_type">Please select account type.</string>
+    <string name="Please_enter_account_holder_name">Please enter account holder name.</string>
+    <string name="Please_enter_account_number">Please enter account number.</string>
+    <string name="Please_enter_correct_account_number">Please enter correct account number.</string>
+    <string name="Please_enter_confirm_account_number">Please enter confirm account number.</string>
+    <string name="account_number_not_match">Account number does not match confirm account number.</string>
+    <string name="Please_pic_aadhar_image">Please pick front aadhaar image.</string>
+    <string name="Please_pic_back_aadhar_image">Please pick back aadhaar image.</string>
+    <string name="Please_enter_account_holder_number">Please enter account holder number.</string>
+    <string name="Please_enter_adhar_number">Please enter aadhaar number.</string>
+    <string name="Please_enter_valid_adhar_number">Please enter valid aadhaar number.</string>
+    <string name="Please_enter_correct_account_holder_number">Please enter correct account holder number.</string>
+    <string name="Please_enter_address_one">Please enter address 1.</string>
+    <string name="Please_enter_address_two">Please enter address 2.</string>
+    <string name="Please_enter_landmark">Please enter landmark.</string>
+    <string name="amount_validation">Insufficient amount.</string>
+    <string name="please_enter_reference_no">Please enter reference number.</string>
+    <string name="please_select_date">Please select date.</string>
+    <string name="please_select_amount">Please enter amount.</string>
+    <string name="please_select_valid_amount">Please enter valid amount.</string>
+    <string name="please_select_receipt_image">Please select receipt image.</string>
+    <string name="refrance_number">Enter payment reference number</string>
+
+    <string name="check_connection">The internet connection appears to be offline.</string>
+
+    <!--GPS-->
+    <string name="gps_setting">GPS Settings.</string>
+    <string name="gps_not_enable">Please enable GPS Settings.</string>
+    <string name="action_settings">Ok</string>
+    <string name="try_again">Try Again!</string>
+
+    <!--inVoice-->
+    <string name="status">Yous request is processed. Please expect funds in your Account within one working day.</string>
+    <string name="bank_name1">Bank Name : </string>
+    <string name="credit">Credited To : </string>
+    <string name="account_holder_name1">Account Holder Name:</string>
+    <string name="account_number">Account Number : </string>
+    <string name="ifsc_code">IFSC code : </string>
+    <string name="amount1">amount</string>
+    <string name="total">Total</string>
+    <string name="fees">fees</string>
+    <string name="gst">gst</string>
+    <string name="share">Share</string>
+    <string name="copy">Copy</string>
+    <string name="close">Close</string>
+    <string name="read_more"><u>See More</u></string>
+    <string name="verified">Verified</string>
+    <string name="your_account_have_been_blocked">Your Account has been Blocked.</string>
+    <string name="your_account_have_been_deleted">Your Account has been deleted. You have to created a new account.</string>
+    <!--<string name="to_activate_your_number_Please_click_below_given_link">To activate your number, Please call on +917507164806.</string>-->
+    <string name="to_activate_your_number_Please_click_below_given_link">To activate your number, Please email on info@acepay.app.</string>
+
+    <!--BitcoinAddressList-->
+    <string name="Qrcode">QR Code</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="bitcoin_address1">Enter Receiver Details</string>
+    <string name="receiver_name">Receiver Name</string>
+    <string name="receiver_bitcoin_address">Receiver AceCoin Address</string>
+    <string name="date1">Date</string>
+    <string name="transaction_id">Transaction Id</string>
+    <string name="amount_inr">Amount(INR)</string>
+    <string name="amount_bit">Status</string>
+
+    <!--Transaction Details-->
+    <string name="transaction_details">Transaction Details</string>
+    <string name="transaction_type">Transaction Type : </string>
+    <string name="sender_id">Sender Id : </string>
+    <string name="receiver_id">Receiver Id : </string>
+    <string name="receiver_mobile">Receiver Mobile : </string>
+    <string name="transaction_date_time">Transaction Date &amp; Time : </string>
+    <string name="transaction_status">Transaction Status : </string>
+    <string name="ip_address">IP Address : </string>
+    <string name="transaction_ip">Transaction IP : </string>
+    <string name="pay_with_paypal">Payment with paypal</string>
+    <string name="pay_with_card">Payment with card</string>
+    <string name="card_no">Card no.</string>
+    <string name="clk_to_proceed">Click to proceed</string>
+    <string name="deposited">Deposited 5000 via RTGS/NEFT/IMPS\n from your bank to our bank.</string>
+    <string name="sure">Please make sure that beneficiary name must be Proma pvt ltd</string>
+    <string name="info">Please make payment of 5000 rs\n from your below bank account only</string>
+    <string name="referalcode">Your Refer Code</string>
+    <string name="shar">Share</string>
+    <string name="sell_all"><u>Sell All</u></string>
+    <string name="send_all"><u>Send All</u></string>
+
+    <string name="enable_tp_processs">To enable us to process your order, please choose your transaction type and enter payment refrance number from your bank statement only. you can also upload image of your transaction.</string>
+
+    <!--Support-->
+    <string name="supprtview">View our Help center, creats ticket,manage your existing tickets or rate the app</string>
+    <string name="title_activity_knowledge_base">KnowledgeBase</string>
+    <string name="sink_contact">Sync Contacts</string>
+    <!--Time formats-->
+    <string name="time_just_now">Just now</string>
+    <string name="time_minute_ago">a minute ago</string>
+    <string name="time_min_ago">minutes ago</string>
+    <string name="time_an_hr_ago">an hour ago</string>
+    <string name="time_hr_ago">hours ago</string>
+    <string name="time_yesterday">yesterday</string>
+    <string name="time_day_ago">days ago</string>
+    <string name="time_today">today</string>
+    <string name="forgot_pin"><u>Forgot Pin ?</u></string>
+
+    <string name="acc_verification">Account Verification</string>
+    <string name="re_deposit">Rs deposit</string>
+    <string name="pin">PIN</string>
+    <string name="withdraww">Withdrawal</string>
+    <string name="send_receve">Send/receive transaction</string>
+    <string name="other">Others</string>
+
+    <string name="emailver_pen">Email Verification Pending</string>
+    <string name="approval_pen">Approval Pending</string>
+    <string name="change">Change in bank account</string>
+    <string name="company">Company Bank account</string>
+    <string name="requestrej">Request rejected</string>
+    <string name="level">Level 2 verification pending</string>
+
+    <string name="express">Express Transfer</string>
+    <string name="normal">Normal Transfer</string>
+    <string name="paymentgateway">Payment Gateway</string>
+    <string name="blocked">My account got blocked</string>
+    <string name="sms">SMS not received after 24 hours</string>
+    <string name="forgot">Forgot PIN</string>
+    <string name="invoice"><u>Invoice</u></string>
+    <string name="don_t_ask_me_again">Don\'t ask me again.</string>
+    <string name="do_not_have_enough_balance">You do not have enough balance, please recharge your wallet.</string>
+
+
+    <plurals name="days">
+        <item quantity="zero">%d Days</item>
+        <item quantity="one">%d Day</item>
+        <item quantity="other">%d Days</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="zero">%d Hours</item>
+        <item quantity="one">%d Hour</item>
+        <item quantity="other">%d Hours</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="zero">%d Minutes</item>
+        <item quantity="one">%d Minute</item>
+        <item quantity="other">%d Minutes</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="zero">%d Seconds</item>
+        <item quantity="one">%d Second</item>
+        <item quantity="other">%d Seconds</item>
+    </plurals>
+
+    <!-- //public static final String BASE_URL = "https://bitok.co.in:8080/";
+
+//    public static final String BASE_URL = "https://13.59.227.77:8080/";
+//    public static final String BASE_URL = "https://13.59.195.176:8080/";
+    //http://13.59.195.176/homes/btcRateNew
+
+
+   // public static final String PDF_URL = "https://bitok.co.in/";
+
+  // public static final String PDF_URL = "https://13.59.227.77:8080/";
+
+//    public static final String PDF_URL = "https://13.59.195.176/";
+
+
+    //public static final String PDF_URL = "https://bitok.co.in/";
+  //public static final String BASE_URL = "http://13.59.61.137:8080/";
+  //public static final String PDF_URL = "http://13.59.61.137/";
+  //public static final String PDF_URL = "http://13.59.61.137:8080/";
+    /*public static final String ImagePath = "https://bitok.co.in/img/profiles/";
+    public static final String BANK_IMAGE = "https://bitok.co.in/img/banks/";
+    public static final String PAN_IMAGE = "https://bitok.co.in/img/pancards/";
+    public static final String Adhar_image = "https://bitok.co.in/img/aadhar/";
+    public static final String Advert_image = "https://bitok.co.in/img/advertisements/";*/
+
+   /*
+    public static final String ImagePath = "https://13.59.195.176/img/profiles/";
+    public static final String BANK_IMAGE = "https://13.59.195.176/img/banks/";
+    public static final String PAN_IMAGE = "https://13.59.195.176/img/pancards/";
+    public static final String Adhar_image = "https://13.59.195.176/img/aadhar/";
+    public static final String Advert_image = "https://13.59.195.176/img/advertisements/";
+    public static final String Gift_reward_image = "https://13.59.195.176/img/advertisements/";
+
+
+    //  public static final String BASE_URL = "http://metapay.io:8080/";
+//  public static final String PDF_URL = "http://metapay.io/";
+//  public static final String ImagePath = "http://metapay.io/img/profiles/";
+//  public static final String BANK_IMAGE = "http://metapay.io/img/banks/";
+//  public static final String PAN_IMAGE = "http://metapay.io/img/pancards/";
+//  public static final String Adhar_image = "http://metapay.io/img/aadhar/";
+//  public static final String Advert_image = "http://metapay.io/img/advertisements/";
+    -->
+
+
+    <!--
+
+    https://api.roundpay.net//API/Payout
+
+    {
+  "UserID":11577,
+  "Token": "0f1ab4d41ee4e308f46ba3d2b8817e75",
+  "OutletID": 31467,
+  "PayoutRequest": {
+    "AccountNo": "mohdshaad2009@okhdfcbank",
+    "AmountR": 100,
+    "BankID": 2546,
+    "IFSC": "",
+    "SenderMobile": "8699202650",
+    "SenderName": "Ravina Kapila",
+    "SenderEmail": "kapilaravina55@gmail.com",
+    "BeneName": "MOHD SHADAB",
+    "BeneMobile": "8267836652",
+    "APIRequestID": 54532222222222366,
+    "SPKey": "UPI"
+  }
+}-->
+
+
+</resources>

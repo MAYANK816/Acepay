@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">www.alots.in</domain>
+        <domain includeSubdomains="true">sms.nextgenbpo.in</domain>
+        <domain includeSubdomains="true">13.59.195.176</domain>
+        <domain includeSubdomains="true">103.16.101.52</domain>
+        <domain includeSubdomains="true">18.191.233.107</domain>
+        <domain includeSubdomains="true">3.141.25.244</domain>
+        <domain includeSubdomains="true">143.110.190.134</domain>
+        <domain includeSubdomains="true">134.209.144.10</domain>
+    </domain-config>
+
+</network-security-config>

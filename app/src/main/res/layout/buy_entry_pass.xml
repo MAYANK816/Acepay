@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <ImageView
+            android:id="@+id/ivarrow"
+            android:layout_width="wrap_content"
+            android:background="@drawable/back_errow"
+            android:backgroundTint="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_x"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txName"
+            android:layout_width="wrap_content"
+            android:textColor="@color/gradient_1"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
+            android:text="Entry Pass"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvWinnerLabel"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:padding="12dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Winner Announce in: 00 day's 00:00:00"
+        android:background="@drawable/blue_bg_gradient"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15"
+        android:gravity="start|center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_5"
+                android:text="Buy Rate"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_small_size" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/light_grey_all_radius"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_2">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="@dimen/margin_2"
+                    android:text="Ace"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_small_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="01"
+                    android:textColor="@color/text_grey_color"
+                    android:textSize="@dimen/text_small_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" = "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_small_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="@dimen/margin_2"
+                    android:text="₹"
+                    android:textColor="@color/light_green"
+                    android:textSize="@dimen/text_small_size"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/tvBuyrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/text_grey_color"
+                    android:textSize="@dimen/text_small_size" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_5"
+                android:text="Sell Rate"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/light_grey_all_radius"
+                android:gravity="center"
+                android:padding="@dimen/margin_2">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="@dimen/margin_2"
+                    android:text="Ace"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_small_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="01"
+                    android:textColor="@color/text_grey_color"
+                    android:textSize="@dimen/text_small_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" = "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_small_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="@dimen/margin_2"
+                    android:text="₹"
+                    android:textColor="@color/light_green"
+                    android:textSize="@dimen/text_small_size"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/txSellRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/text_grey_color"
+                    android:textSize="@dimen/text_small_size" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvNoData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Data Found"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCompetition"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_margin="@dimen/margin_8"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPlans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yellow_background"
+        android:layout_margin="@dimen/margin_5"
+        />
+
+
+   <RelativeLayout
+       android:id="@+id/rlUpi"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="8dp"
+       android:padding="6dp"
+       android:layout_marginLeft="35dp"
+       android:layout_marginRight="35dp"
+       android:layout_gravity="center_horizontal|center"
+       android:background="@drawable/yellow_gray">
+
+
+       <!--<ImageView
+           android:id="@+id/ivUpi"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="6dp"
+           android:src="@drawable/upi"/>-->
+
+       <TextView
+           android:id="@+id/tvPay"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Pay"
+           android:textStyle="bold"
+           android:layout_centerInParent="true"
+           android:textSize="20sp"
+           android:layout_marginLeft="10dp"
+           android:textColor="@color/white"
+           />
+
+
+
+
+
+
+
+   </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvPayLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay with UPI Safe and Secure"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_marginRight="10dp"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="Acepay organised competition on regular basis where you test your ability and get many rewards.But to participate in competition you need an entry pass.Which you need to buy with very nominal fee."/>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

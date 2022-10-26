@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_knowledge_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_knowledge_base2">
+
+   <androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity_knowledge_base"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.acepay.Support.KnowledgeBase">
+            <include layout="@layout/toolbar"
+                android:id="@+id/tool"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lay_out_main"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/icon_size"
+                android:layout_marginLeft="@dimen/margin_x"
+                android:layout_marginRight="@dimen/margin_x"
+                android:layout_below="@+id/tool">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="General"
+                    android:textColor="@color/gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Metapay is registerd under which legel framwork?"
+                    android:layout_marginTop="@dimen/margin_xx"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Refer Metapay and get free Acepays"
+                    android:layout_marginTop="@dimen/margin_x"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Metapay appexplainer vedio"
+                    android:layout_marginTop="@dimen/margin_x"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Top global Acepay regulations"
+                    android:layout_marginTop="@dimen/margin_x"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Is Acepay legel in India?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="General"
+                    android:layout_marginTop="@dimen/margin_xx"
+                    android:textColor="@color/gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="How to send Acepay to Trezor from Zebpay"
+                    android:layout_marginTop="@dimen/margin_xx"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="How do I import Acepays from an existing wallet to Metapay"
+                    android:layout_marginTop="@dimen/margin_x"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Can you cancel or reverse my Acepay transaction?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="How do I send Acepays to a Acepay addrress?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="How do I receive Acepays in Metapay"
+                    android:layout_marginTop="@dimen/margin_x"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Security"
+                    android:layout_marginTop="@dimen/margin_xx"
+                    android:textColor="@color/gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Having trouble re-setting PIN"
+                    android:layout_marginTop="@dimen/margin_xx"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Why Your registered mobile number is important for Metapay account"
+                    android:layout_marginTop="@dimen/margin_x"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="How to set PINlock for app?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="How do I protect my Metapay account?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="I have lost my phone,What to do?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FAQs"
+                    android:layout_marginTop="@dimen/margin_xx"
+                    android:textColor="@color/gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Metapay APIs"
+                    android:layout_marginTop="@dimen/margin_xx"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="What are the taxes on buying/selling Acepays?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Why KYC is important for all type of transaction?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="How fast will i get the money when i sell?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Where can i sell Acepays?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rs Deposite and Withdrawal"
+                    android:layout_marginTop="@dimen/margin_xx"
+                    android:textColor="@color/gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I can not see the Express Money Transfer"
+                    android:layout_marginTop="@dimen/margin_xx"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My bank is not supported in the payment gatway?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What to do if we can not find your payment?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How can I use Express transfer?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How can I change my bank details associated with Metapay?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Us"
+                    android:layout_marginTop="@dimen/margin_xx"
+                    android:textColor="@color/gray"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Us"
+                    android:layout_marginTop="@dimen/margin_xx"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buy and sell Acepays"
+                    android:layout_marginTop="@dimen/margin_xx"
+                    android:textColor="@color/gray"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Treatment of Acepay in accounting books "
+                    android:layout_marginTop="@dimen/margin_xx"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How can I set a price of sell Acepays "
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How can I set a price of buy Acepays "
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Are there any transaction limit?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Around Acepays"
+                    android:layout_marginTop="@dimen/margin_xx"
+                    android:textColor="@color/gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What if Indian goverment bans Acepay?"
+                    android:layout_marginTop="@dimen/margin_xx"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is my Acepay address?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Caution-Acepay Mining Schemes"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Why there is a difference in Indian Price and international price? "
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get started "
+                    android:layout_marginTop="@dimen/margin_xx"
+                    android:textColor="@color/gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How do i complete my second level verification  "
+                    android:layout_marginTop="@dimen/margin_xx"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How to verify company's account on Metapay "
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How can I sell Acepay? "
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How to verify my account to buy a Acepay?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How can buy a bitcin instantly?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forked Coins"
+                    android:layout_marginTop="@dimen/margin_xx"
+                    android:textColor="@color/gray"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is Metapay's position on forked coin? "
+                    android:layout_marginTop="@dimen/margin_xx"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="what is status of Acepay Gold "
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How will I get Acepay Cash(BCH)?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How can buy a bitcin instantly?"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:textColor="@color/black"/>
+
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

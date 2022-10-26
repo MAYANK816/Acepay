@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".26"
+            android:background="@drawable/blue_bg_gradient"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/your_current_btc_balance"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_small_size"/>
+
+            <LinearLayout
+                android:id="@+id/lnrefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_8">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                  <!--  <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:text="@string/your_current_btc_balance"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_small_size"/>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:text="Ace"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_normal_size" />
+
+
+                        <TextView
+                            android:id="@+id/tvBitcoin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:maxLength="10"
+                            android:text="43.00"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_normal_size"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvINR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/white_all_radius"
+                    android:paddingBottom="@dimen/margin_2"
+                    android:paddingEnd="@dimen/margin_12"
+                    android:paddingStart="@dimen/margin_12"
+                    android:paddingTop="@dimen/margin_2"
+                    android:text="546464"
+                    android:textColor="@color/text_grey_color"
+                    android:textSize="@dimen/margin_12" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llBuyRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="Buy Rate"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_small_size" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_10"
+                        android:background="@drawable/light_grey_all_radius"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+
+                        android:padding="@dimen/margin_5">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingRight="@dimen/margin_2"
+                            android:text="Ace"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_small_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="01"
+                            android:textColor="@color/text_grey_color"
+                            android:textSize="@dimen/text_small_size"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text=" = "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_small_size"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingRight="@dimen/margin_2"
+                            android:text="₹"
+                            android:visibility="gone"
+                            android:textColor="@color/light_green"
+                            android:textSize="@dimen/text_small_size"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/tvBuyrate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="906450"
+
+
+                            android:textColor="@color/text_grey_color"
+                            android:textSize="@dimen/text_small_size"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llSellRate"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="Sell Rate"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_small_size" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_10"
+                        android:background="@drawable/light_grey_all_radius"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/margin_5">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingRight="@dimen/margin_2"
+                            android:text="Ace"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_small_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="01"
+                            android:textColor="@color/text_grey_color"
+                            android:textSize="@dimen/text_small_size"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text=" = "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_small_size"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingRight="@dimen/margin_2"
+                            android:text="₹"
+                            android:visibility="gone"
+                            android:textColor="@color/light_green"
+                            android:textSize="@dimen/text_small_size"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/txSellRate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="509876"
+
+                            android:textColor="@color/text_grey_color"
+                            android:textSize="@dimen/text_small_size"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_5">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:background="@drawable/blue_bg_gradient"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txBuy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/margin_8"
+                        android:text="@string/buy"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:background="@drawable/sell_dashboard_activebg"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txSelling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/margin_8"
+                        android:text="@string/sell"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".26"
+            android:background="@color/text_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Frequented"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:id="@+id/lnSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/margin_10"
+
+                        android:layout_width="@dimen/freq_icon_width"
+                        android:layout_height="@dimen/freq_icon_width"
+                        android:background="@drawable/messages_black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Messages"
+                        android:textColor="@color/text_grey_color"
+                        android:textSize="@dimen/text_vsmall_size"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnReceiver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/margin_10"
+
+                        android:layout_width="@dimen/freq_icon_width"
+                        android:layout_height="@dimen/freq_icon_width"
+                        android:background="@drawable/black_receive" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/receive"
+                        android:textColor="@color/text_grey_color"
+                        android:textSize="@dimen/text_vsmall_size"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lntransaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_width="@dimen/margin_55"
+                        android:layout_height="@dimen/margin_50"
+                        android:background="@drawable/transaction_black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/transaction"
+                        android:textColor="@color/text_grey_color"
+                        android:textSize="@dimen/text_vsmall_size"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/margin_10"
+
+                        android:layout_width="@dimen/freq_icon_width"
+                        android:layout_height="@dimen/freq_icon_width"
+                        android:background="@drawable/send_black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/send"
+                        android:textColor="@color/text_grey_color"
+                        android:textSize="@dimen/text_vsmall_size"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/lnRateChart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_width="@dimen/freq_icon_width"
+                        android:layout_height="@dimen/freq_icon_width"
+                        android:background="@drawable/activities_black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Activities"
+                        android:textColor="@color/text_grey_color"
+                        android:textSize="@dimen/text_vsmall_size"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".23">
+
+            <TextView
+                android:id="@+id/tvWalletBal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:gravity="center"
+                android:text="@string/wallet_balance"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small_size" />
+
+            <TextView
+                android:id="@+id/tvwallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWalletBal"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/light_grey_all_radius"
+                android:paddingBottom="@dimen/margin_2"
+                android:paddingEnd="@dimen/margin_12"
+                android:paddingStart="@dimen/margin_12"
+                android:paddingTop="@dimen/margin_2"
+                android:text="546464"
+                android:textColor="@color/text_grey_color"
+                android:textSize="@dimen/margin_12" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tvwallet"
+                android:background="@drawable/blue_bg_gradient"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/lnDeposit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_6"
+                        android:layout_marginLeft="@dimen/margin_6"
+                        android:layout_marginRight="@dimen/margin_6"
+                        android:layout_marginTop="@dimen/wallet_margin"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/wallet_icon_width"
+                                android:layout_height="@dimen/wallet_icon_height"
+                                android:background="@drawable/deposit_black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_5"
+                                android:layout_marginTop="@dimen/margin_5"
+                                android:text="@string/deposit"
+                                android:textColor="@color/text_grey_color"
+                                android:textSize="@dimen/text_vsmall_size" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/margin_2"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/margin_10"
+                            android:background="@color/text_bg" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lnBank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_6"
+                        android:layout_marginRight="@dimen/margin_6"
+                        android:layout_marginTop="@dimen/wallet_margin"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/wallet_icon_width"
+                                android:layout_height="@dimen/wallet_icon_height"
+                                android:background="@drawable/withdraw_black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_5"
+                                android:layout_marginTop="@dimen/margin_5"
+                                android:text="@string/withdraw"
+                                android:textColor="@color/text_grey_color"
+                                android:textSize="@dimen/text_vsmall_size" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/margin_2"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/margin_10"
+                            android:background="@color/text_bg" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnTransfer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_6"
+                        android:layout_marginRight="@dimen/margin_6"
+                        android:layout_marginTop="@dimen/wallet_margin"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="@dimen/wallet_icon_width"
+                                android:layout_height="@dimen/wallet_icon_height"
+                                android:background="@drawable/transfer_black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_5"
+                                android:layout_marginTop="@dimen/margin_5"
+                                android:text="@string/transfer"
+                                android:textColor="@color/text_grey_color"
+                                android:textSize="@dimen/text_vsmall_size" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/margin_2"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/margin_10"
+                            android:background="@color/text_bg" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnRece"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_6"
+                        android:layout_marginRight="@dimen/margin_6"
+                        android:layout_marginTop="@dimen/wallet_margin"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/wallet_icon_width"
+                                android:layout_height="@dimen/wallet_icon_height"
+                                android:background="@drawable/black_receive" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_5"
+                                android:layout_marginTop="@dimen/margin_5"
+                                android:text="@string/receive"
+                                android:textColor="@color/text_grey_color"
+                                android:textSize="@dimen/text_vsmall_size" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/margin_2"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/margin_10"
+                            android:background="@color/text_bg" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnINR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginBottom="@dimen/margin_6"
+                        android:layout_marginRight="@dimen/margin_2"
+                        android:layout_marginTop="@dimen/wallet_margin"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/wallet_icon_width"
+                                android:layout_height="@dimen/wallet_icon_height"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/black_transaction" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_5"
+                                android:layout_marginTop="@dimen/margin_5"
+                                android:text="@string/transaction"
+                                android:textColor="@color/text_grey_color"
+                                android:textSize="@dimen/text_vsmall_size" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

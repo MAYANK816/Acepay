@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_v"
+    android:background="@color/colorPrimary"
+    >
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/margin_v"
+            android:layout_marginTop="@dimen/margin_v"
+            android:layout_marginEnd="@dimen/margin_v"
+            android:layout_marginBottom="@dimen/margin_v"
+            android:src="@drawable/placeholder" />
+
+        <ImageView
+            android:id="@+id/ivIvg"
+            android:src="@drawable/edit_profile"
+            android:layout_width="wrap_content"
+            android:tint="@color/white"
+            android:padding="@dimen/margin_v"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/margin_x"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tvViewProfile"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvheadername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="John Smith"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:text="+91263537367"
+        android:layout_marginBottom="@dimen/margin_x"
+        android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

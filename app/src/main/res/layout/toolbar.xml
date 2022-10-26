@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextAppearance="?android:textAppearanceMedium"
+        app:titleTextColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/ivarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_x"
+        android:background="@drawable/back_errow"
+        android:backgroundTint="@color/black" />
+
+    <TextView
+        android:id="@+id/txName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Dashboard"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/lnRateChart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="6dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/freq_icon_width"
+            android:layout_height="@dimen/freq_icon_width"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/n_scan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_2"
+            android:text="UPI QR Scan"
+            android:textColor="@color/text_grey_color"
+            android:textSize="@dimen/text_vsmall_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivPremium"
+        android:layout_width="40dp"
+        android:background="@drawable/premium"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_v"
+        android:layout_marginRight="@dimen/margin_x"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_height="40dp" />
+
+
+    <ImageView
+        android:id="@+id/ivUpi"
+        android:layout_width="@dimen/margin_50"
+        android:layout_height="@dimen/margin_50"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/margin_v"
+        android:layout_marginRight="@dimen/margin_x"
+        android:src="@drawable/upi_scan_logo"
+        android:visibility="gone" />
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlMain"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/ivImg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_5"
+            android:scaleType="fitXY"
+            android:src="@drawable/diamond"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rllayer"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edSearch"
+        android:layout_width="match_parent"
+        android:layout_weight=".1"
+        android:padding="@dimen/margin_x"
+        android:visibility="visible"
+        android:textColor="@color/black"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:hint="Search(Transaction Id)"
+        android:background="@color/white"
+        android:textColorHint="@color/black"
+        android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:background="@drawable/search"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_v"
+            android:backgroundTint="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivTick"
+        android:layout_width="@dimen/card_view"
+        android:layout_height="@dimen/card_view"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_x"
+        android:background="@drawable/white_tick"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/margin_x"
+        android:backgroundTint="@color/black" />
+
+</RelativeLayout>

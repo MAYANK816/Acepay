@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grp1" android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="@string/dashboard" />
+    </group>
+
+    <group android:id="@+id/grp3" android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/verification"
+            android:icon="@drawable/verification"
+            android:title="@string/verification" />
+
+    </group>
+
+<!--    <group android:id="@+id/grp2" android:checkableBehavior="single" >-->
+<!--        <item-->
+<!--            android:id="@+id/bitcoin_address"-->
+<!--            android:icon="@drawable/bitcoin_round"-->
+<!--            android:title="@string/bitcoin_address" />-->
+
+<!--    </group>-->
+
+    <group android:id="@+id/grp11" android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/bitcoin_address_book"
+            android:icon="@drawable/bitcoin_book"
+            android:title="@string/bitcoin_address_book" />
+
+    </group>
+
+
+    <group android:id="@+id/grp13" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/statement"
+            android:icon="@drawable/bitcoin_round"
+            android:title="@string/statement" />
+
+    </group>
+
+
+    <group android:id="@+id/grp4" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/rate_chart"
+            android:icon="@drawable/rate_chart"
+            android:title="@string/rate_chart" />
+
+    </group>
+
+
+    <group android:id="@+id/grp10" android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/free_bitcoin"
+            android:visible="false"
+            android:icon="@drawable/bitcoin_round"
+            android:title="@string/free_bitcoin" />
+
+    </group>
+
+    <group android:id="@+id/grp5" android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/setting"
+            android:title="@string/setting" />
+
+    </group>
+
+    <group android:id="@+id/grp14" android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/sink_refer"
+            android:icon="@drawable/refer_code"
+            android:title="@string/sink_refer_code" />
+
+    </group>
+
+<!--    <group android:id="@+id/grp20" android:checkableBehavior="single" >-->
+
+<!--        <item-->
+<!--            android:id="@+id/sink_list"-->
+<!--            android:icon="@drawable/sink"-->
+<!--            android:title="@string/sink_list" />-->
+
+<!--    </group>-->
+
+    <group android:id="@+id/grp15" android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/quick_help"
+            android:icon="@drawable/quick_help"
+            android:title="@string/quick_help" />
+
+    </group>
+
+    <group android:id="@+id/grp16" android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/support"
+            android:icon="@drawable/setting"
+            android:title="@string/support" />
+
+    </group>
+
+    <group android:id="@+id/grp12" android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/about_us"
+            android:icon="@drawable/about_us"
+            android:title="@string/about_us" />
+
+    </group>
+
+ <group android:id="@+id/grp17" android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/notificatio"
+            android:icon="@drawable/notifcation"
+            android:title="@string/notifications" />
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_adhaar_card_verification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/text_grey_color"
+        android:layout_below="@+id/tool"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lnDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_12"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/lnPan"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_60"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_3"
+                            android:text="@string/Pan_card"
+                            android:textColor="@color/text_grey_color" />
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lnBank"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_60"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_3"
+                            android:text="@string/bank_card"
+
+                            android:textColor="@color/text_grey_color" />
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lnAdhar"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_60"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_3"
+                            android:text="@string/adhaar_card"
+                            android:textColor="@color/text_grey_color" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/lnDown"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rlAadhaar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tvTitle"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/rlImageAadhaar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_70"
+                    android:layout_marginRight="@dimen/margin_70"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/rlImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imgProfile"
+                            android:layout_width="@dimen/margin_100"
+                            android:layout_height="@dimen/margin_100"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="@dimen/margin_5"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:layout_marginEnd="@dimen/margin_5"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:background="@drawable/grey_cir_fill_primary_corner_" />
+
+                        <ImageView
+                            android:id="@+id/ivEdit"
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginLeft="-30dp"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:layout_toRightOf="@+id/imgProfile"
+                            android:src="@drawable/edit" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/rlImage">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imback"
+                            android:layout_width="@dimen/margin_100"
+                            android:layout_height="@dimen/margin_100"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="@dimen/margin_5"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:layout_marginEnd="@dimen/margin_5"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:background="@drawable/grey_cir_fill_primary_corner_" />
+
+                        <ImageView
+                            android:id="@+id/ivback"
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginLeft="-30dp"
+                            android:layout_toRightOf="@+id/imback"
+                            android:src="@drawable/edit" />
+
+
+                    </RelativeLayout>
+
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlImageAadhaar"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:gravity="end"
+                    android:text="status"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:visibility="gone" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/llMainAadhaar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/txstatus"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="vertical">
+
+
+                        <com.acepay.Util.GradientFontEditText
+                            android:id="@+id/edAccountHolder"
+                            style="@style/App_EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/adhaar_card_no"
+                            android:inputType="number"
+                            android:paddingBottom="@dimen/margin_10"
+                            android:paddingLeft="@dimen/margin_18"
+                            android:paddingRight="@dimen/margin_10"
+                            android:paddingTop="@dimen/margin_10"
+                            android:textSize="18dp"  />
+
+                        <com.acepay.Util.GradientFontEditText
+                            android:id="@+id/edAddress1"
+                            style="@style/App_EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_18"
+                            android:hint="Address1"
+                            android:paddingBottom="@dimen/margin_10"
+                            android:paddingLeft="@dimen/margin_18"
+                            android:paddingRight="@dimen/margin_10"
+                            android:paddingTop="@dimen/margin_10"
+                            android:textSize="18dp"  />
+
+                        <com.acepay.Util.GradientFontEditText
+                            android:id="@+id/edAddress2"
+
+                            style="@style/App_EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_18"
+                            android:hint="Address2"
+                            android:paddingBottom="@dimen/margin_10"
+                            android:paddingLeft="@dimen/margin_18"
+                            android:paddingRight="@dimen/margin_10"
+                            android:paddingTop="@dimen/margin_10"
+                            android:textSize="18dp" />
+
+
+                        <com.acepay.Util.GradientFontEditText
+                            android:id="@+id/edLandmark"
+
+                            style="@style/App_EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_18"
+                            android:hint="Landmark"
+                            android:paddingBottom="@dimen/margin_10"
+                            android:paddingLeft="@dimen/margin_18"
+                            android:paddingRight="@dimen/margin_10"
+                            android:paddingTop="@dimen/margin_10"
+                            android:textSize="18dp"  />
+
+
+                        <com.acepay.Util.GradientFontSpinner
+                            android:id="@+id/spState"
+                            style="@style/App_EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_18"
+                            android:paddingBottom="@dimen/margin_10"
+                            android:paddingLeft="@dimen/margin_18"
+                            android:paddingRight="@dimen/margin_10"
+                            android:paddingTop="@dimen/margin_10"
+                            android:textSize="18dp"  />
+
+                        <com.acepay.Util.GradientFontSpinner
+                            android:id="@+id/spcity"
+                            style="@style/App_EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_18"
+                            android:paddingBottom="@dimen/margin_10"
+                            android:paddingLeft="@dimen/margin_18"
+                            android:paddingRight="@dimen/margin_10"
+                            android:paddingTop="@dimen/margin_10"
+                            android:textSize="18dp"  />
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="@dimen/margin_10"
+                            android:layout_marginTop="@dimen/margin_35"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txPrevAadhaar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/margin_20"
+                                android:background="@drawable/blue_bg_radius"
+                                android:paddingBottom="@dimen/margin_10"
+                                android:paddingLeft="@dimen/margin_30"
+                                android:paddingRight="@dimen/margin_30"
+                                android:paddingTop="@dimen/margin_10"
+                                android:text="Previous"
+                                android:visibility="gone"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/txNext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/blue_bg_radius"
+                                android:paddingBottom="@dimen/margin_10"
+                                android:paddingLeft="@dimen/margin_30"
+                                android:paddingRight="@dimen/margin_30"
+                                android:paddingTop="@dimen/margin_10"
+                                android:text="  Next  "
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llAadhaarNotes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_25"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Notes : "
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_10"
+
+                                android:text="- Please upload both sides of Aadhaar Card."
+                                android:textAppearance="?android:textAppearanceSmall"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_after_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".AfterSplash">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="@string/old_secure_pin"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_x"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edfirst"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_margin="@dimen/margin_v"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="numberPassword"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:padding="@dimen/margin_x"
+                    android:background="@drawable/back_side"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edSecond"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/margin_x"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="numberPassword"
+                    android:layout_margin="@dimen/margin_v"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:background="@drawable/back_side"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edthird"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/margin_x"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="numberPassword"
+                    android:layout_margin="@dimen/margin_v"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:background="@drawable/back_side"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edFouth"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_margin="@dimen/margin_v"
+                    android:padding="@dimen/margin_x"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="numberPassword"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:background="@drawable/back_side"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_x"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="@string/new_secure_pin"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_x"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edfirstnew"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_margin="@dimen/margin_v"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="numberPassword"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:padding="@dimen/margin_x"
+                    android:background="@drawable/back_side"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edSecondnew"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/margin_x"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="numberPassword"
+                    android:layout_margin="@dimen/margin_v"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:background="@drawable/back_side"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edthirdnew"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/margin_x"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="numberPassword"
+                    android:layout_margin="@dimen/margin_v"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:background="@drawable/back_side"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edFouthnew"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_margin="@dimen/margin_v"
+                    android:padding="@dimen/margin_x"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="numberPassword"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:background="@drawable/back_side"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_x"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvGenerate"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="@string/confirm_secure_pin"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_x"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edfirstcnf"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_margin="@dimen/margin_v"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="numberPassword"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:padding="@dimen/margin_x"
+                    android:background="@drawable/back_side"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edSecondcnf"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/margin_x"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="numberPassword"
+                    android:layout_margin="@dimen/margin_v"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:background="@drawable/back_side"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edthirdcf"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/margin_x"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="numberPassword"
+                    android:layout_margin="@dimen/margin_v"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:background="@drawable/back_side"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edFouthcf"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_margin="@dimen/margin_v"
+                    android:padding="@dimen/margin_x"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="numberPassword"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:background="@drawable/back_side"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_xx"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/txSubmit"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:visibility="visible"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="@string/submit"
+                android:padding="@dimen/margin_v"
+                android:background="@drawable/green_back_button"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

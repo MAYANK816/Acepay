@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_submit_request"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+      >
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xv"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_v"
+                android:text="Category"
+                android:textColor="@color/black"
+
+                android:textStyle="bold" />
+
+            <!--
+                        <com.metapay.Util.GradientFontEditText
+            -->
+
+
+            <com.acepay.Util.GradientFontEditText
+                android:id="@+id/ed_catagary"
+
+                style="@style/App_EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_18"
+                android:editable="false"
+                android:enabled="false"
+                android:hint="Email verification pending"
+                android:inputType="textNoSuggestions"
+                android:paddingBottom="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_18"
+                android:paddingRight="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_10"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_v"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+            <com.acepay.Util.GradientFontEditText
+                android:id="@+id/ed_date"
+
+                style="@style/App_EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_18"
+                android:hint="Email verification pending"
+                android:inputType="textNoSuggestions"
+                android:paddingBottom="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_18"
+                android:paddingRight="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_10"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tv_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_v"
+                android:text="Amount"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!--<EditText
+                android:id="@+id/ed_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_v"
+                android:background="@drawable/edittext_style"
+                android:visibility="gone"
+                android:inputType="textNoSuggestions"
+                android:textColor="@color/backgound"
+                android:hint="Email verification pending"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:padding="@dimen/margin_x" />-->
+
+            <com.acepay.Util.GradientFontEditText
+                android:id="@+id/ed_amt"
+
+                style="@style/App_EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_18"
+                android:hint="Email verification pending"
+                android:inputType="textNoSuggestions"
+                android:paddingBottom="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_18"
+                android:paddingRight="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_10"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tv_ordernu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_v"
+                android:text="Withdrawal order number"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!--         <EditText
+                         android:id="@+id/ed_ordernu"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="@dimen/margin_v"
+                         android:background="@drawable/edittext_style"
+                         android:visibility="gone"
+                         android:inputType="textNoSuggestions"
+                         android:textColor="@color/backgound"
+                         android:hint="Email verification pending"
+                         android:textAppearance="?android:textAppearanceSmall"
+                         android:padding="@dimen/margin_x" />
+                     -->
+
+            <com.acepay.Util.GradientFontEditText
+                android:id="@+id/ed_ordernu"
+
+                style="@style/App_EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_18"
+                android:hint="Email verification pending"
+                android:inputType="textNoSuggestions"
+                android:paddingBottom="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_18"
+                android:paddingRight="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_10"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_18"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+            <com.acepay.Util.GradientFontEditText
+                android:id="@+id/ed_descrption"
+
+                style="@style/App_EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="@dimen/margin_8"
+                android:inputType="textNoSuggestions"
+                android:paddingBottom="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_18"
+                android:paddingRight="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_10"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+            <LinearLayout
+                android:id="@+id/lay_attech"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_xx"
+                android:background="@drawable/active_bg_radius"
+                android:gravity="center"
+                android:padding="@dimen/margin_x">
+
+                <TextView
+                    android:id="@+id/tv_attechment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@android:drawable/ic_menu_camera"
+                    android:gravity="center"
+                    android:text="Attatch File"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_xx"
+                    android:background="@drawable/blue_bg_radius"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_v"
+                    android:text="@string/submit"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
